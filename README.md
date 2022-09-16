@@ -1,20 +1,13 @@
-# **Building A Big Mart Sales Prediction**
+# **Predicting Compressive Strength of Concrete**
 
 ![Python 3.6](https://img.shields.io/badge/Python-3.6-brightgreen.svg)
-![HTML 4.01](https://img.shields.io/badge/HTML-4.01-skyblue.svg)
-![CSS3](https://img.shields.io/badge/CSS3-pink.svg)
-![sklearn](https://img.shields.io/badge/Library-sklearn-orange.svg)
-![Numpy](https://img.shields.io/badge/Library-Numpy-blue.svg)
-![flask](https://img.shields.io/badge/Library-flask-white.svg)
 ![pyforest](https://img.shields.io/badge/Library-pyforest-red.svg)
+![Pandas](https://img.shields.io/badge/Library-Pandas-orange.svg)
+![seaborn](https://img.shields.io/badge/Library-seaborn-blue.svg)
+![matplotlib.pyplot](https://img.shields.io/badge/Library-matplotlib.pyplot-violet.svg)
+![Numpy](https://img.shields.io/badge/Library-Numpy-blue.svg)
 
-• This repository consists of files required to deploy a ___Machine Learning Web App___ created with ___Flask___ on ___Heroku___ platform.
-
-• If you want to view the deployed model, click on the following link:
-https://ipl-score-prediction-app458.herokuapp.com/
-
-• Please do ⭐ the repository, if it helped you in anyway.
-
+• This repository consists of files required to deploy a ___Machine Learning Model___ created with ___Python___ 
 
 ## Authors
 
@@ -27,25 +20,38 @@ https://ipl-score-prediction-app458.herokuapp.com/
     2. Exploratory Data Analysis(EDA)
     3. Feature Engineering
     4. Model Building and Tuning
-    5. Building Flask API
-    6. Pushing code to Github
-    7. Connecting to your Heroku account 
-    8. Deploy App
-
-
+   
 ## Installation
 
 To install the libraries used in this project. Follow the 
 below steps:
 
 ```bash
-from flask import Flask, render_template, request
-import pickle
-import numpy as np
-from sklearn.linear_model import LinearRegression
-import pandas as pd
-import pickle
+!pip install pyforest
+from pyforest import*
+lazy_imports()
+!pip install graphviz
+!pip install pydot
 
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import itertools
+%matplotlib inline
+
+from sklearn.ensemble import AdaBoostRegressor
+from sklearn.neighbors import KNeighborsRegressor
+from sklearn.ensemble import BaggingRegressor
+from sklearn.svm import SVR
+import xgboost as xgb
+from sklearn.tree import DecisionTreeRegressor
+
+from sklearn.tree import export_graphviz
+from sklearn.externals.six import StringIO
+from IPython.display import Image
+import graphviz
+import pydot
 ```
     
 ## Running Flask Api
@@ -55,19 +61,6 @@ To run tests, run the following command
 ```bash
   python app.py
 ```
-
-## Running Heroku Tests
-
-To run a Heroku deployment tests, click on the following link:
-
-[IPL First Innings Score Prediction App](https://ipl-score-prediction-app458.herokuapp.com/)
-## Demo
-
-[Click HERE To View App](http://localhost:8501/)
-
-## Preview
-![Click HERE To View](https://github.com/Akash1070/Covid-19-Dasboard-for-Berlin-City/blob/main/Preview.png)
-
 
 ## 🚀 About Me
 
@@ -88,6 +81,7 @@ Data Scientist Enthusiast | Petroleum Engineer Graduate | Solving Problems Using
 
 
 ![Logo](https://businesstoys.in/assets/programs/full-stack-data-science-professional-program/tools.png)
+
 ## Other Me
 👩‍💻 I’m interested in Petroleum Engineering
 
