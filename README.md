@@ -7,7 +7,7 @@
 ![matplotlib.pyplot](https://img.shields.io/badge/Library-matplotlib.pyplot-violet.svg)
 ![Numpy](https://img.shields.io/badge/Library-Numpy-blue.svg)
 
-• This repository consists of files required to deploy a ___Machine Learning Model___ created with ___Python___ 
+• deploying a ___Machine Learning Model___ created with ___Python___ 
 
 ## Authors
 
